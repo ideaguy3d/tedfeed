@@ -1,0 +1,14 @@
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+j-read
+.idea
+app/css_libs
+app/jQuery_plugins
+app/scripts/angularfire/config.js
+
+
+
+

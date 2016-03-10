@@ -1,0 +1,40 @@
+.feeds {
+  background-color: #434343;
+  border: grey 4px solid;
+  margin: 12px 12px;
+  min-height: 300px;
+  text-align: center;
+}
+.feeds * {
+  color: whitesmoke;
+  line-height: 60px;
+}
+.feeds > div {
+  min-height: 54px;
+}
+.ted-vid {
+  margin: 12px auto;
+  background-color: whitesmoke;
+  width: 66%;
+  cursor: pointer;
+}
+.ted-vid:hover {
+  background-color: rgba(245, 245, 245, 0.85);
+}
+.ted-vid > div {
+  color: #434343;
+  font-weight: 600;
+  white-space: normal;
+}
+.ted-vid > div:first-child {
+  text-transform: uppercase;
+  font-size: 124%;
+}
+.ted-vid > div:last-child {
+  line-height: 28px;
+  font-weight: 300;
+  font-size: 124%;
+}
+.menu-item {
+  cursor: pointer;
+}

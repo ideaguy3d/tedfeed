@@ -1,0 +1,2 @@
+this was the ted feed app I was building using google feed, but
+then I started Building Realtime Angular Controls with this project.

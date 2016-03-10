@@ -1,0 +1,156 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Julius Alvarado</title>
+  <meta name="description" content="Julius App">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- CSS libs -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css_libs/font-awesome.min.css">
+  <link rel="stylesheet" href="css_libs/angular-gridster.min.css">
+  <link rel="stylesheet" href="styles/tedfeed.css">
+  <link rel="stylesheet" href="styles/ng-rta-app.css">
+  <link href="ext-modules/psFramework/psFramework.css" rel="stylesheet"/>
+  <link href="ext-modules/psMenu/psMenu.css" rel="stylesheet"/>
+  <link href="ext-modules/psDashboard/psDashboard.css" rel="stylesheet"/>
+
+  <!-- Google Feed API  -->
+  <!--<script type="text/javascript" src="https://www.google.com/jsapi"></script>-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('43', {'packages':['gauge']});
+    google.charts.setOnLoadCallback(function(){
+      angular.bootstrap(document, ['tedfeedApp'])
+    });
+  </script>
+</head>
+
+
+<body>
+
+<!-- nav -->
+<div class="header fa-">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#/">tedfeed</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+        <ul class="nav navbar-nav">
+          <li><a href="#/">home</a></li>
+          <!-- //angularfire -->
+          <li><a ng-href="#/chat">chat</a></li>
+          <li>
+            <a ng-hide-auth="" href="#/login">log in</a>
+            <a ng-show-auth="" href="#/account">account</a>
+          </li>
+          <li><a href="#/tedfeed">ted feed</a></li>
+          <li><a href="#/dashboard">dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ps-framework title="Realtime AngularJS" subtitle="by Julius Alvarado" icon-file="images/ng.png">
+  <ps-menu>
+    <ps-menu-item label="Home" icon="fa-dashboard" route=""></ps-menu-item>
+    <ps-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></ps-menu-item>
+    <ps-menu-item label="Designs" icon="fa-dashboard" route="designs"></ps-menu-item>
+    <ps-menu-item label="Interfaces" icon="fa-dashboard" route="interfaces"></ps-menu-item>
+  </ps-menu>
+</ps-framework>
+
+<div class="footer">
+  <div class="container">
+    <h3 class="text-center">
+      Built by <a href="https://juliusalvarado.info" target="_blank"><span class="label label-default">Julius A</span></a>
+      with <img src="https://angularjs.org/img/AngularJS-large.png" alt="angular" width="178"></h3>
+  </div>
+</div>
+
+<!-- old ted feed view, was placed directly into index file, not an ng-view --
+<section class="container">
+  <h1>Google Feed Practice Start {{2+2}}</h1>
+
+  <div class="feeds text-center">
+    <div id="feed"></div>
+  </div>
+
+  <h1>Google Feed Practice End</h1>
+</section>
+-->
+
+<!--  ======== Libraries and Frameworks ======== -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+<script src="bower_components/angular-animate.js"></script>
+<script src="bower_components/angular-gridster.js"></script>
+<script src="bower_components/ngStorage.js"></script>
+<script src="bower_components/bootstrap.js"></script>
+<script src="bower_components/angular-ui/ui-bootstrap.js"></script>
+<script src="bower_components/angular-ui/ui-bootstrap-tpls.js"></script>
+
+<!--  ======== My AngularJS and Firebase code ======== -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/angularfire/config.js"></script>
+<script src="scripts/angularfire/firebase.ref.js"></script>
+<script src="scripts/controllers/chat.js"></script>
+<script src="scripts/filters/reverse.js"></script>
+<script src="scripts/angularfire/auth.js"></script>
+<script src="scripts/controllers/login.js"></script>
+<script src="scripts/controllers/account.js"></script>
+<script src="scripts/directives/ngShowAuth.js"></script>
+<script src="scripts/directives/ngHideAuth.js"></script>
+<script src="scripts/routes.js"></script>
+
+
+
+<!-- psFramework external modules -->
+<script src="ext-modules/psMenu/psMenuModule.js"></script>
+<script src="ext-modules/psMenu/psMenuController.js"></script>
+<script src="ext-modules/psMenu/psMenuDirective.js"></script>
+<script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
+<script src="ext-modules/psMenu/psMenuGroupDirective.js"></script>
+<script src="ext-modules/psDashboard/psDashboardModule.js"></script>
+<script src="ext-modules/psDashboard/psDashboardDirective.js"></script>
+<script src="ext-modules/psDashboard/psWidgetBodyDirective.js"></script>
+<script src="ext-modules/psFramework/psFrameworkModule.js"></script>
+<script src="ext-modules/psFramework/psFrameworkController.js"></script>
+<script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
+<script src="ext-modules/psFramework/psUserProfile/psUserProfileSmallDirective.js"></script>
+<script src="ext-modules/psFramework/psUserProfile/psUserProfileDirective.js"></script>
+
+<!-- real time controls & widgets -->
+<script src="ext-modules/web-metrics/webmetrics.mod.js"></script>
+<script src="ext-modules/web-metrics/webmetrics.ser.js"></script>
+
+<script src="ext-modules/charts/psChartsMod.js"></script>
+<script src="ext-modules/charts/psGaugeDir.js"></script>
+
+<script src="scripts/routes-rta.js"></script>
+
+<!-- Dashboards -->
+<script src="app-ps/directives/rtaDashboardDir.js"></script>
+
+<!-- Widgets -->
+<script src="app-ps/widgets/rtaGaugeWidgetDir.js"></script>
+
+</body>
+</html>
