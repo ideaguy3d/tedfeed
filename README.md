@@ -1,12 +1,12 @@
-# tedfeed
-
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
+# tedfeed app
+Hi, I'm [Julius Alvarado](https://www.juliusalvarado.info)
+I generated this project with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 1.0.0.
 
-## Build & development
+## this is a portfolio project
 
-Run `grunt` for building and `grunt serve` for preview.
+just Building this ng app to add to my portfolio.
 
-## Testing
+### just to keep my skills sharp while searching for a job
 
-Running `grunt test` will run the unit tests with karma.
+Just trying to keep my CSS3/UI coding & AngularJS skills strong.
