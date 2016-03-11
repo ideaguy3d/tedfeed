@@ -1,2 +1,3 @@
-this was the ted feed app I was building using google feed, but
-then I started Building Realtime Angular Controls with this project.
+this was the ted feed app I was building using google feed,
+then I started Building Realtime Angular Controls to integrate
+with this project.
