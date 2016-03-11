@@ -1,4 +1,5 @@
 # tedfeed app
+live demo of this app at [tedfeed.firebaseapp.com](https://tedfeed.firebaseapp.com)
 Hi, I'm [Julius Alvarado](https://www.juliusalvarado.info)
 I generated this project with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 1.0.0.
